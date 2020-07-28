@@ -4,42 +4,62 @@ import React, { useState, useEffect } from "react";
 
 const DefaultData = [
   0,
-  1,
   0,
   0,
   0,
   0,
   0,
   0,
-  1,
-  0,
-  0,
-  1,
-  0,
-  0,
-  1,
-  1,
-  1,
-  0,
-  1,
-  0,
-  0,
-  1,
   0,
   0,
   0,
   0,
   0,
   0,
-  1,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
   0,
 ];
 
 export const Grid = (props) => {
-  const rows = 3;
+  const rows = 5;
   const columns = 10;
   // establishing state
-  const [gridData, setGridData] = useState(0);
+  const [gridData, setGridData] = useState();
 
   const getNewCellState = (idx) => {
     // figure out which column # this is
@@ -147,7 +167,7 @@ export const Grid = (props) => {
         style={{
           display: "flex",
           paddingTop: "5px",
-          marginLeft: "140px",
+          marginLeft: "120px",
         }}
       >
         <button onClick={() => handleClick()}>One Generation</button>

@@ -4,7 +4,7 @@
 # Clickable/Tappable:
 # can be clicked to allow user to setup initial cell configuration
 should NOT be clickable while simulation is running
-Toggle state functionality: switch between alive & dead either because user manually toggled cell before starting simulation or simulation is running and rules of life caused cell to change state
+# Toggle state functionality: switch between alive & dead either because user manually toggled cell before starting simulation or simulation is running and rules of life caused cell to change state
 # An appropriate data structure to hold a grid of cells that is at least 25x25. Go as big as you want.
 Text to display current generation being displayed
 Utilize a timeout function to build the next generation of cells & update the display at the chosen time interval
@@ -13,6 +13,7 @@ Button to clear the grid
 
 Write an algorithm that implements the following basic steps:
 For each cell in the current generation's grid:
+
 # Examine state of all eight neighbors (it's up to you whether you want cells to wrap around the grid and consider cells on the other side or not)
 # Apply rules of life to determine if this cell will change states
 When main loop completes:
