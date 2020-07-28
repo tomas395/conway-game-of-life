@@ -39,8 +39,8 @@ function App() {
             as if by reproduction.
           </li>
         </ol>
+        <Grid></Grid>
       </OlContainer>
-      <Grid></Grid>
     </div>
   );
 }
