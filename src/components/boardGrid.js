@@ -150,7 +150,10 @@ export const Grid = (props) => {
           marginLeft: "140px",
         }}
       >
-        <button onClick={() => handleClick()}>Advance</button>
+        <button onClick={() => handleClick()}>One Generation</button>
+        {/* <button onClick={() => handleClear()}>Clear</button> 
+        <button onClick={() => handleClick()}>Start</button>
+        <button onClick={() => handleClick()}>Stop</button> */}
       </div>
     </div>
   );
