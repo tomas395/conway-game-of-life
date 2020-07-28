@@ -39,7 +39,7 @@ export const Grid = (props) => {
   const rows = 3;
   const columns = 10;
   // establishing state
-  const [gridData, setGridData] = useState();
+  const [gridData, setGridData] = useState(0);
 
   const getNewCellState = (idx) => {
     // figure out which column # this is

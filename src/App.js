@@ -5,7 +5,6 @@ import styled from "styled-components";
 
 const OlContainer = styled.div`
   justify-content: center;
-  padding: 15px;
   width: 420px;
 `;
 
