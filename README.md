@@ -1,3 +1,5 @@
+Deployed version of the game can be found here: (https://tortizgameoflife.netlify.app/)
+
 # Cellular Automata and Conway's "Game of Life"
 
 ---
