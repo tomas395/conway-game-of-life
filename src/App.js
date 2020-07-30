@@ -124,10 +124,6 @@ function App() {
     setRunSpeed(e.target.value);
   };
 
-  // const handleLog = () => {
-  //   console.log(gridData);
-  // };
-
   const handlePresetChange = (e) => {
     setSelectedPreset(e.target.value);
   };
@@ -230,7 +226,7 @@ function App() {
                 onChange={(e) => handlePresetChange(e)}
               >
                 <option value="fireworks">Fireworks</option>
-                <option value="supernova">Supernova</option>
+                <option value="pulsar">Pulsar</option>
                 <option value="glider">Glider</option>
                 <option value="nitro">Nitro</option>
                 <option value="random">Random</option>
@@ -248,9 +244,6 @@ function App() {
             >
               Clear Board
             </button>
-            {/* <button className="main-btn secondary" onClick={() => handleLog()}>
-              console.log Current State
-            </button> */}
           </div>
         </div>
       </div>

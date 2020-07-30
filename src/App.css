@@ -51,7 +51,7 @@ body {
 
 .control-box {
   border: 1px solid #050505;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   background: #1e2430;
   color: rgba(255, 255, 255, 0.5);
 }
