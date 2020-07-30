@@ -1,42 +1,188 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 body {
-  font-family: open-sans;
+  padding: 1rem;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7ab49f+0,628dab+50,313353+100 */
+  background: #7ab49f; /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    #7ab49f 0%,
+    #628dab 50%,
+    #313353 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    #7ab49f 0%,
+    #628dab 50%,
+    #313353 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    #7ab49f 0%,
+    #628dab 50%,
+    #313353 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ab49f', endColorstr='#313353',GradientType=1 ); /* IE6-9 */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cell-count {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.cell {
+  cursor: pointer;
+}
+
+.center {
+  flex: 1 1 40em;
+  display: flex;
+  justify-content: center;
+}
+
+.controls {
+  margin-bottom: 1rem;
+}
+
+.control-box {
+  border: 1px solid #050505;
+  margin-bottom: 16px;
+  background: #1e2430;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.control-content {
+  padding: 8px;
+}
+
+.control-box p {
+  margin: 0;
+}
+
+.generation-count {
+  margin-top: 0px;
+}
+
+.generation-count,
+.cell-count {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+h1 {
+  font-family: "Rowdies", cursive;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  font-size: 1.375rem;
+}
+
+.left-side {
+  flex: 0 1 270px;
+  order: -1;
+}
+
+.main-btn {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0.86);
+  display: block;
+  width: 100%;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 8px;
+  letter-spacing: 0.4px;
+  margin-bottom: 8px;
+  cursor: ponter;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+.secondary {
+  border: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.main-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+.main-btn i {
+  padding-right: 4px;
+}
+
+ol {
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+.rules {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.right-side {
+  flex: 0 1 270px;
+}
+
+.rules-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.select-box {
+  width: 100%;
+}
+
+.select-box input {
+  width: 100%;
+}
+
+.select-box label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  margin-bottom: 2px;
+}
+
+select {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.stat {
+  font-family: "Rowdies", cursive;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 2.75rem;
+  text-align: right;
+  margin: 0;
+}
+
+.stat-description {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: right;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.title {
+  background: rgb(50, 75, 85);
+  background: linear-gradient(
+    90deg,
+    rgba(50, 75, 85, 1) 0%,
+    rgba(33, 48, 58, 1) 100%
+  );
+  border-bottom: 1px solid #050505;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 8px;
 }
