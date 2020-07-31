@@ -31,12 +31,12 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ab49f', endColorstr='#313353',GradientType=1 ); /* IE6-9 */
 }
 
-.cell-count {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-}
-
 .cell {
   cursor: pointer;
+}
+
+.cell-count {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .center {
@@ -56,12 +56,12 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.control-content {
-  padding: 8px;
-}
-
 .control-box p {
   margin: 0;
+}
+
+.control-content {
+  padding: 0.5rem;
 }
 
 .generation-count {
@@ -97,16 +97,12 @@ h1 {
   font-size: 0.8rem;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 8px;
+  padding: 0.5rem;
   letter-spacing: 0.4px;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
   cursor: ponter;
   transition: all 0.3s ease-in-out;
   outline: none;
-}
-
-.secondary {
-  border: 1px solid rgba(0, 0, 0, 0.7);
 }
 
 .main-btn:hover {
@@ -116,12 +112,16 @@ h1 {
 }
 
 .main-btn i {
-  padding-right: 4px;
+  padding-right: 0.25rem;
 }
 
 ol {
   font-size: 1rem;
   padding-left: 1rem;
+}
+
+.right-side {
+  flex: 0 1 270px;
 }
 
 .rules {
@@ -130,13 +130,18 @@ ol {
   color: rgba(0, 0, 0, 0.4);
 }
 
-.right-side {
-  flex: 0 1 270px;
-}
-
 .rules-title {
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+.secondary {
+  border: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+select {
+  width: 100%;
+  margin-bottom: 0.5rem;
 }
 
 .select-box {
@@ -152,11 +157,6 @@ ol {
   text-transform: uppercase;
   font-size: 0.875rem;
   margin-bottom: 2px;
-}
-
-select {
-  width: 100%;
-  margin-bottom: 8px;
 }
 
 .stat {
@@ -184,5 +184,5 @@ select {
   );
   border-bottom: 1px solid #050505;
   color: rgba(255, 255, 255, 0.5);
-  padding: 8px;
+  padding: 0.5rem;
 }
