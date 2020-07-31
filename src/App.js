@@ -68,7 +68,7 @@ function App() {
     }
   };
 
-  // set the board state to empty when the size changes
+  // set the board state to empty when the size
   useEffect(() => {
     setGridData(new Array(rows * columns).fill(0));
   }, [columns, rows]);
