@@ -43,13 +43,6 @@ export const Grid = (props) => {
             );
           })}
       </div>
-      <div
-        style={{
-          display: "flex",
-          paddingTop: "5px",
-          marginLeft: "120px",
-        }}
-      ></div>
     </div>
   );
 };
